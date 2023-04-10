@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+@import '_vars';
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: scroll;
+}
+
+.page {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: "nav     aside"
+        "section aside"
+        "footer  aside";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .page {
+        overflow-y: auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 15% 60% 25%;
+        grid-template-areas: "nav     nav"
+            "aside   footer"
+            "section section";
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        grid-template-areas: "nav     nav"
+            "section section"
+            "section section"
+            "footer footer";
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
+
+    .main-content {
+        margin-top: 20px;
+    }
+}

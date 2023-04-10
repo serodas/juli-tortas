@@ -1,0 +1,185 @@
+@import '_vars';
+
+.footer {
+    align-items: flex-end;
+    background: $mint;
+    border-radius: 0 80px 0 0;
+    display: flex;
+    grid-area: footer;
+    justify-content: space-around;
+    transform: translateY(100%);
+
+    animation-name: footer;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.footer div img {
+    bottom: 30px;
+    position: absolute;
+    width: 400px;
+    transform: translateY(0px) scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.footer div {
+    background: $blue;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    position: relative;
+    width: 130px;
+}
+
+.footer div:hover img {
+    cursor: pointer;
+    transform: translateY(-20px) scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer div:nth-child(1) {
+    transform: translateY(200px);
+
+    animation-name: footer-child;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.footer div:nth-child(2) {
+    transform: translateY(200px);
+
+    animation-name: footer-child;
+    animation-duration: 0.5s;
+    animation-delay: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.footer div:nth-child(3) {
+    transform: translateY(200px);
+
+    animation-name: footer-child;
+    animation-duration: 0.5s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footer {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes footer-child {
+    0% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        flex-direction: column;
+        height: 100%;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .footer div {
+        border-radius: 25px 0 0 25px;
+        width: 70%;
+        height: 30%;
+    }
+
+    .footer div img {
+        width: 200px;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .footer div {
+        justify-content: left;
+        width: 60%;
+    }
+
+    footer {
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .footer div:hover img {
+        transform: translateX(-40px) scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .footer div img {
+        transform: translateX(0px) scale(1);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    @keyframes footer {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    .footer div:nth-child(1) {
+        transform: translateX(200px);
+
+        animation-name: footer-child;
+        animation-duration: 0.5s;
+        animation-delay: 3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .footer div:nth-child(2) {
+        transform: translateX(200px);
+
+        animation-name: footer-child;
+        animation-duration: 0.5s;
+        animation-delay: 3.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .footer div:nth-child(3) {
+        transform: translateX(200px);
+
+        animation-name: footer-child;
+        animation-duration: 0.5s;
+        animation-delay: 4s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes footer-child {
+        0% {
+            transform: translateX(200px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}

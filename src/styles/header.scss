@@ -1,0 +1,51 @@
+@import '_vars';
+
+.navbar {
+    /* background: pink; */
+    grid-area: nav;
+}
+
+.navbar__content {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    padding: 0 0 0 80px;
+    width: 100%;
+
+    animation: 2s navbar 0.5s ease-in-out;
+}
+
+@keyframes navbar {
+    0% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.navbar__content img {
+    width: 80px;
+}
+
+.navbar__content ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    width: 450px;
+}
+
+.navbar__content ul li a {
+    color: $red;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 580px) {
+    .navbar__content {
+        padding: 0;
+    }
+}

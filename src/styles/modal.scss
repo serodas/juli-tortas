@@ -1,0 +1,80 @@
+@import '_vars';
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: grid !important;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+
+    display: grid;
+    place-items: center;
+}
+
+.modal-content {
+    align-items: center;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+    position: relative;
+    width: 40%;
+}
+
+.modal-content__close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+section .slider {
+    display: flex;
+    width: 80%;
+    height: 50%;
+}
+
+.slider img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.slider img:hover {
+    cursor: crosshair;
+    width: 50%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+    .modal-content {
+        width: 80%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 580px) {
+    .modal-content {
+        width: 90%;
+    }
+}
