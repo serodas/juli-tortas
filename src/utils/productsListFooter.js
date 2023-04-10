@@ -19,7 +19,7 @@ const productsListFooter = [
         id: 1,
         name: 'Rosa 1',
         image: rosa1,
-        description: 'sdfsdfsd',
+        description: '',
         images: [
             {
                 id: 1,
@@ -47,7 +47,7 @@ const productsListFooter = [
         id: 2,
         name: 'grado',
         image: modista1,
-        description: 'sdfsdfsd',
+        description: '',
         images: [
             {
                 id: 1,
@@ -67,7 +67,7 @@ const productsListFooter = [
         id: 3,
         name: 'Frozen',
         image: frozen1,
-        description: 'sdfsdfsd',
+        description: '',
         images: [
             {
                 id: 1,
