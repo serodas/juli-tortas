@@ -15,7 +15,7 @@ const MainContent = () => {
                     <li>Una torta de semillas de amapola con una máquina de coser, tijeras y metro para una modista.</li>
                     <li>Una torta de Frozen con una figura de Elsa, un muñeco comestible de Olaf, y copos de nieve de azúcar.</li>
                 </ul>
-                Si quieres sorprender a tus seres queridos con una torta única y deliciosa, ¡contáctame! y te haré una cotización.
+                Si quieres sorprender a tus seres queridos con una torta única y deliciosa, ¡contáctame! y te haré una cotización. Solo whatsapp 317 510 9818.
             </p>
         </section>
     );
