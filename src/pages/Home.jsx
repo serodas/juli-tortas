@@ -12,17 +12,17 @@ import '@styles/home.scss';
 const Home = () => {
     const { state } = useContext(AppContext);
     return (
-        <div>
+        <>
             <section className='container'>
                 <Header />
-                {  state.toggleProductsList &&  <ProductsList /> }
-                { ! state.toggleProductsList &&  <SideContent />}
-                { ! state.toggleProductsList &&  <MainContent />}
-                { ! state.toggleProductsList &&  <Footer />}
+                {state.toggleProductsList && <ProductsList />}
+                {!state.toggleProductsList && <SideContent />}
+                {!state.toggleProductsList && <MainContent />}
+                {!state.toggleProductsList && <Footer />}
             </section>
             <Loader />
-            <Modal/>
-        </div>
+            <Modal />
+        </>
     );
 }
 
