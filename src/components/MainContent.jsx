@@ -6,7 +6,7 @@ const MainContent = () => {
         <section className="main-content">
             <p>Juli</p>
             <h1>Tortas</h1>
-            <p>¡Hola! Soy José Julian un apasionado de la repostería y me encanta preparar tortas
+            <span>¡Hola! Soy José Julian un apasionado de la repostería y me encanta preparar tortas
                 personalizadas con mucha creatividad en Pereira. He hecho tortas para todo tipo de ocasiones:
                 cumpleaños, baby shower, aniversarios, graduaciones y más.
                 Algunos de mis trabajos fueron los siguientes:
@@ -16,7 +16,7 @@ const MainContent = () => {
                     <li>Una torta de Frozen con una figura de Elsa, un muñeco comestible de Olaf, y copos de nieve de azúcar.</li>
                 </ul>
                 Si quieres sorprender a tus seres queridos con una torta única y deliciosa, ¡contáctame! y te haré una cotización. Solo whatsapp 317 510 9818.
-            </p>
+            </span>
         </section>
     );
 }
