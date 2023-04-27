@@ -1,0 +1,20 @@
+section .slider {
+    display: flex;
+    width: 80%;
+    height: 50%;
+}
+
+.slider img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.slider img:hover {
+    cursor: crosshair;
+    width: 50%;
+    opacity: 1;
+    filter: contrast(120%);
+}

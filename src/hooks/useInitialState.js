@@ -2,13 +2,12 @@ import { useState } from 'react';
 
 const initialState = {
     images: [],
-    description: '',
-    showModal: false,
     toggleProductsList: false
 }
 
 const useInitialState = () => {
     const [state, setState] = useState(initialState);
+    const [openModal, setOpenModal] = useState(false);
 
     const addState = (payload) => {
         setState(payload);
@@ -16,7 +15,9 @@ const useInitialState = () => {
 
     return {
         state,
-        addState
+        addState,
+        openModal,
+        setOpenModal
     }
 }
 

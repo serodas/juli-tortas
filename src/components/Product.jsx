@@ -4,16 +4,15 @@ import '@styles/product.scss';
 
 const Product = ({product}) => {
 
-    const { addState } = useContext(AppContext);
+    const { addState, setOpenModal } = useContext(AppContext);
 
     const handleClick = (product) => {
         const newState = {
             images: product.images,
-            description: product.description,
-            showModal: true,
             toggleProductsList: true
         }
         addState(newState);
+        setOpenModal(true);
     };
 
     return (
