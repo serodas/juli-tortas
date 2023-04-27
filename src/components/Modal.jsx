@@ -1,7 +1,5 @@
-import React, { useContext } from 'react';
-import ReactDOM, { createPortal } from 'react-dom';
+import { createPortal } from 'react-dom';
 
-import AppContext from '../context/AppContext';
 import '@styles/modal.scss';
 
 const Modal = ({ children }) => {
