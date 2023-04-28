@@ -1,13 +1,15 @@
-import React, { useContext } from 'react';
-import Product from './Product';
+import React, { useContext, useEffect } from 'react';
+import Product from '../components/Product';
 import productsAll from '../utils/productsAll';
-import '@styles/productsList.scss';
 import AppContext from '../context/AppContext';
-import Modal from './Modal';
-import Slider from './Slider';
+import Modal from '../components/Modal';
+import Slider from '../components/Slider';
+
+import '@styles/productsList.scss';
 
 const ProductsList = () => {
     const { openModal, setOpenModal } = useContext(AppContext);
+
 
     return (
         <>
