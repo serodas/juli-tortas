@@ -2,14 +2,13 @@ import React, { useContext } from 'react';
 import AppContext from '../context/AppContext';
 import '@styles/product.scss';
 
-const Product = ({product}) => {
+const Product = ({ product }) => {
 
     const { addState, setOpenModal } = useContext(AppContext);
 
     const handleClick = (product) => {
         const newState = {
-            images: product.images,
-            toggleProductsList: true
+            images: product.images
         }
         addState(newState);
         setOpenModal(true);

@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 const initialState = {
     images: [],
-    toggleProductsList: false
 }
 
 const useInitialState = () => {

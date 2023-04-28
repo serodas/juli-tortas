@@ -5,6 +5,7 @@ import NotFound from '../pages/NotFound';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
+import ProductsList from '../components/ProductsList';
 
 const App = () => {
     const initialState = useInitialState();
@@ -15,6 +16,7 @@ const App = () => {
                 <Layout>
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/tortas" element={<ProductsList />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Layout>
