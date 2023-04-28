@@ -10,7 +10,6 @@ import '@styles/productsList.scss';
 const ProductsList = () => {
     const { openModal, setOpenModal } = useContext(AppContext);
 
-
     return (
         <>
             <div className='products-list-container'>

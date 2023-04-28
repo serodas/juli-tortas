@@ -12,18 +12,18 @@
     padding: 0 0 0 80px;
     width: 100%;
 
-    // animation: 2s navbar 0.5s ease-in-out;
+    animation: 2s navbar 0.5s ease-in-out;
 }
 
-// @keyframes navbar {
-//     0% {
-//         transform: translateY(-200px);
-//     }
+@keyframes navbar {
+    0% {
+        transform: translateY(-200px);
+    }
 
-//     100% {
-//         transform: translateY(0px);
-//     }
-// }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
 .navbar__content img {
     width: 80px;

@@ -7,6 +7,7 @@ const initialState = {
 const useInitialState = () => {
     const [state, setState] = useState(initialState);
     const [openModal, setOpenModal] = useState(false);
+    const [toggleProductList, setToggleProductList] = useState(false);
 
     const addState = (payload) => {
         setState(payload);
@@ -16,7 +17,9 @@ const useInitialState = () => {
         state,
         addState,
         openModal,
-        setOpenModal
+        setOpenModal,
+        toggleProductList,
+        setToggleProductList
     }
 }
 
