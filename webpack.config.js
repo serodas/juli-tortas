@@ -7,7 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: '/dist/'
     },
     devtool: "source-map",
     mode: 'development',
@@ -62,7 +62,9 @@ module.exports = {
         }),
     ],
     devServer: {
-        historyApiFallback: true,
+        historyApiFallback: {
+            rewrites: [{ from: /\//, to: '/404.html' }],
+        },
         static: path.join(__dirname, 'dist'),
         compress: true,
         port: 3005,
