@@ -4,5 +4,7 @@ import App from './routes/App';
 
 const root = ReactDOM.createRoot(document.getElementById('app'));
 root.render(
-    <App />
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
