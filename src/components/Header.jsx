@@ -1,22 +1,20 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import logo from '@logos/logo-mini.png';
-import AppContext from '../context/AppContext';
 import '@styles/header.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-    const { setToggleProductList } = useContext(AppContext);
-    const handleClick = () => {
-        setToggleProductList(prevState => !prevState);
-    };
     return (
         <nav className="navbar">
             <div className="navbar__content">
                 <img src={logo} alt="Logo" />
                 <ul>
-                    <li><a href="/">INICIO</a></li>
-                    <li><a href="#" onClick={handleClick}>TORTAS</a></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/tortas">Tortas</Link>
+                    </li>
                 </ul>
             </div>
         </nav>
