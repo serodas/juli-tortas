@@ -5,7 +5,7 @@ import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
-import ProductsList from '../containers/ProductsList';
+import ProductsList from '../pages/ProductsList';
 
 const App = () => {
     const initialState = useInitialState();

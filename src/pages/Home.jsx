@@ -5,7 +5,7 @@ import MainContent from '../components/MainContent';
 import SideContent from '../components/SideContent';
 import AppContext from '../context/AppContext';
 import '@styles/home.scss';
-import ProductsList from '../containers/ProductsList';
+import ProductsList from './ProductsList';
 
 const Home = () => {
     const { toggleProductList } = useContext(AppContext);
